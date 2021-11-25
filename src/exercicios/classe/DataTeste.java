@@ -20,5 +20,8 @@ public class DataTeste {
         amanha.ano = 2021;
 
         amanha.dayIsValid(24);
+
+        System.out.println(hoje.dataFormatada());
+        System.out.println(amanha.dataFormatada(amanha.dia, amanha.mes, amanha.ano));
     }
 }

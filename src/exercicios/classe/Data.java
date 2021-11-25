@@ -5,6 +5,13 @@ public class Data {
     int mes;
     int ano;
 
+    public String dataFormatada(){
+        return this.dia + "/" + this.mes + "/" + this.ano;
+    }
+    public String dataFormatada(int dia, int mes, int ano){
+        return String.format("%d/%d/%d", dia, mes, ano);
+    }
+
    public boolean dayIsValid(int day){
        int mes = this.getMes();
        boolean isValid = false;
