@@ -23,5 +23,13 @@ public class DataTeste {
 
         System.out.println(hoje.dataFormatada());
         System.out.println(amanha.dataFormatada(amanha.dia, amanha.mes, amanha.ano));
+
+        // Desafio data
+        // criar construtor sem parametro que deixa a data 1/1/1970 e construtor passando parametros
+        System.out.println("\nDesafio data: ");
+        Data desafio1 = new Data();
+        Data desafio2 = new Data(25,9,1997);
+        System.out.println(desafio1.dataFormatada());
+        System.out.println(desafio2.dataFormatada());
     }
 }
